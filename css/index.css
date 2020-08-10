@@ -1,0 +1,141 @@
+.w {
+  width: 1190px;
+  margin: auto;
+}
+.shortcut {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  background-color: #e3e4e5;
+}
+.shortcut_content {
+  display: flex;
+  font-size: 12px;
+}
+.shortcut_content_location {
+  margin-right: auto;
+}
+.shortcut_content_location span {
+  padding-right: 10px;
+}
+.shortcut_content li {
+  line-height: 30px;
+  padding: 0 10px;
+}
+.shortcut_content li a {
+  margin-right: 5px;
+}
+.shortcut_content li .iconfont {
+  vertical-align: middle;
+}
+.shortcut_content .spacer {
+  width: 5px;
+  color: #999;
+}
+.header {
+  padding-bottom: 10px;
+  height: 120px;
+  display: flex;
+}
+.header .logo {
+  flex: 1 1 0;
+  border: 1px solod #ccc;
+  text-align: center;
+}
+.header .logo img {
+  max-height: 120px;
+}
+.header_search {
+  display: flex;
+  flex: 4 1 0;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.header_search .search_content {
+  display: flex;
+  flex: 2;
+  margin: 25px 20px 5px 25px;
+}
+.header_search .search_content .search_form {
+  display: flex;
+  width: 550px;
+  height: 32px;
+  border: 2px solid #e2231a;
+  text-align: center;
+  margin-right: auto;
+}
+.header_search .search_content .search_form input {
+  flex: 8;
+  display: inline-block;
+  border: none;
+  outline: none;
+}
+.header_search .search_content .search_form button {
+  flex: 1;
+  background-color: #e2231a;
+  border: none;
+  outline: none;
+}
+.header_search .search_content .search_form button .sousuo {
+  color: white;
+}
+.header_search .search_content .mycar {
+  display: flex;
+  margin-right: 10px;
+  width: 130px;
+  height: 36px;
+  line-height: 36px;
+  border: 1px solid #eeeeee;
+}
+.header_search .search_content .mycar .car {
+  margin: auto;
+  position: relative;
+  font-size: 25px;
+  color: #e2231a;
+}
+.header_search .search_content .mycar .num {
+  position: absolute;
+  top: -4px;
+  left: 15px;
+  width: 16px;
+  height: 14px;
+  line-height: 13px;
+  text-align: center;
+  border: 1px solid #e2231a;
+  background-color: #e2231a;
+  border-radius: 7px;
+  font-size: 10px;
+  color: #fff;
+}
+.header_search .search_content .mycar a {
+  margin-right: 10px;
+  color: #e2231a;
+  font-size: 12px;
+}
+.header_search .hotwords {
+  flex: 1;
+  width: 550px;
+  display: flex;
+  font-size: 12px;
+  margin-left: 25px;
+}
+.header_search .hotwords li {
+  flex: 2 1 auto;
+}
+.header_search .navitems {
+  margin-top: 20px;
+  flex: 2;
+  display: flex;
+}
+.header_search .navitems li {
+  flex: 1 1 auto;
+  line-height: 40px;
+  font-weight: 700;
+  color: #c81623;
+}
+.header_search .navitems a {
+  color: #333;
+}
+.header .treasure {
+  flex: 1 1 0;
+}

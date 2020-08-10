@@ -1,0 +1,51 @@
+{
+  "id": "1987202",
+  "name": "addressList",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "5835482",
+      "name": "搜索",
+      "font_class": "sousuo",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "4482958",
+      "name": "定位",
+      "font_class": "dingwei",
+      "unicode": "e67b",
+      "unicode_decimal": 59003
+    },
+    {
+      "icon_id": "7254949",
+      "name": "圈圈向右箭头",
+      "font_class": "quanquanxiangyoujiantou",
+      "unicode": "e737",
+      "unicode_decimal": 59191
+    },
+    {
+      "icon_id": "12489535",
+      "name": "购物车",
+      "font_class": "gouwuche",
+      "unicode": "e64c",
+      "unicode_decimal": 58956
+    },
+    {
+      "icon_id": "8777370",
+      "name": "list",
+      "font_class": "icon-test1",
+      "unicode": "e64f",
+      "unicode_decimal": 58959
+    },
+    {
+      "icon_id": "8777603",
+      "name": "show_more",
+      "font_class": "icon-test",
+      "unicode": "e65c",
+      "unicode_decimal": 58972
+    }
+  ]
+}
