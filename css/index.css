@@ -19,6 +19,7 @@
   padding-right: 10px;
 }
 .shortcut-content li {
+  height: 30px;
   line-height: 30px;
   padding: 0 10px;
 }
@@ -28,19 +29,29 @@
 .shortcut-content li .iconfont {
   vertical-align: middle;
 }
+.shortcut-content .current .myjd-items {
+  display: none;
+}
 .shortcut-content .current:hover {
-  display: block;
   position: relative;
   background-color: #fff;
+  z-index: 1;
 }
 .shortcut-content .current:hover .myjd-items {
-  display: none;
-  position: abusolute;
-  top: 15px;
+  display: flex;
+  position: absolute;
+  left: 0;
+  top: 30px;
   width: 280px;
   height: 150px;
   border: 1px solid #ccc;
-  justify-content: start;
+  background-color: #fff;
+  flex-wrap: wrap;
+}
+.shortcut-content .current:hover .myjd-items .items {
+  padding-left: 20px;
+  width: 120px;
+  height: 24px;
 }
 .shortcut-content .spacer {
   width: 5px;
@@ -162,19 +173,20 @@
 }
 .content {
   width: 100%;
-  height: 480px;
-  margin-bottom: 30px;
+  background-color: #ededed;
 }
 .content-items {
-  padding: 10px 0;
+  padding: 10px 0 0 0;
   display: flex;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 .content-items .nav-left {
   flex: 1;
   width: 190px;
   height: 480px;
-  margin-left: 18px;
+  padding-left: 18px;
+  margin-right: 5px;
+  background-color: #fff;
 }
 .content-items .nav-left li {
   position: relative;
@@ -327,8 +339,293 @@
   height: 150px;
 }
 .content-items .nav-info {
+  display: flex;
+  flex-direction: column;
   height: 480px;
   flex: 1 0 0;
   margin-left: 20px;
-  background-color: #666;
+  font-size: 12px;
+  background-color: #fff;
+}
+.content-items .nav-info .user {
+  width: 170px;
+  margin: 0 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+.content-items .nav-info .user-info {
+  display: flex;
+  height: 71px;
+}
+.content-items .nav-info .user-info img {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+}
+.content-items .nav-info .user-info .welc {
+  margin-top: 20px;
+  transform: translateX(-10px);
+}
+.content-items .nav-info .user-info .welc p {
+  margin-top: 5px;
+  line-height: 20px;
+}
+.content-items .nav-info .user-info .welc p > a:nth-child(1) {
+  padding-right: 5px;
+  border-right: 1px solid #ccc;
+}
+.content-items .nav-info .user-profit {
+  width: 190px;
+  height: 25px;
+  text-align: center;
+}
+.content-items .nav-info .user-profit a {
+  display: inline-block;
+  width: 70px;
+  line-height: 25px;
+  border-radius: 13px;
+  color: #fff;
+  text-align: center;
+}
+.content-items .nav-info .user-profit .new-pro {
+  background-color: #e1251b;
+}
+.content-items .nav-info .user-profit .new-pro:hover {
+  color: #fff !important;
+}
+.content-items .nav-info .user-profit .vip {
+  background-color: #363634;
+}
+.content-items .nav-info .user-profit .vip:hover {
+  color: #fff !important;
+  background-color: #e1251b;
+}
+.content-items .nav-info .news {
+  margin-left: 15px;
+  padding-bottom: 20px;
+}
+.content-items .nav-info .news-fast {
+  display: flex;
+  height: 30px;
+  line-height: 35px;
+}
+.content-items .nav-info .news-fast h5 {
+  margin-right: auto;
+  font-size: 14px;
+  font-weight: 700;
+}
+.content-items .nav-info .news-fast .more .iconfont {
+  font-size: 10px;
+}
+.content-items .nav-info .news-list a {
+  display: block;
+  height: 16px;
+  width: 190px;
+  margin: 5px 4px 0 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.content-items .nav-info .news-list .news-tag {
+  display: inline-block;
+  margin-right: 6px;
+  width: 35px;
+  height: 16px;
+  line-height: 16px;
+  color: #e1251b;
+  background-color: #ddaeac;
+  text-align: center;
+}
+.content-items .nav-info .services {
+  display: flex;
+  width: 170px;
+  margin: 0 20px;
+  border-top: 1px solid #ccc;
+  flex-wrap: wrap;
+  text-align: left;
+}
+.content-items .nav-info .services-item {
+  flex: 2;
+  width: 55px;
+  height: 55px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.content-items .nav-info .services-item-link {
+  display: block;
+}
+.content-items .nav-info .services-item-link img {
+  width: 28px;
+  height: 28px;
+}
+.content .Jd-kill {
+  margin-bottom: 30px;
+}
+.content .Jd-kill .seckill {
+  display: flex;
+  height: 260px;
+  background-color: #fff;
+}
+.content .Jd-kill .seckill .countdown {
+  width: 190px;
+}
+.content .Jd-kill .seckill .countdown a {
+  display: block;
+  height: 260px;
+  text-align: center;
+  color: #fff;
+  background: url("../../images/kill.png") no-repeat;
+}
+.content .Jd-kill .seckill .countdown a .countdown-title {
+  padding-top: 30px;
+  line-height: 45px;
+  font-size: 30px;
+  font-weight: 700;
+}
+.content .Jd-kill .seckill .countdown a .countdown-desc {
+  line-height: 26px;
+  margin-top: 100px;
+  font-size: 14px;
+}
+.content .Jd-kill .seckill .countdown a .countdown-desc strong {
+  line-height: 26px;
+  margin-right: 2px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.content .Jd-kill .seckill .countdown a .countdown-desc .countdown-timmer {
+  display: flex;
+  text-align: center;
+  margin-left: 20px;
+}
+.content .Jd-kill .seckill .countdown a .countdown-desc .countdown-timmer .uini-timer {
+  position: relative;
+  margin: 10px 10px 0 10px;
+  display: block;
+  width: 30px;
+  line-height: 30px;
+  background-color: #2f3430;
+  font-size: 20px;
+  font-weight: 700;
+}
+.content .Jd-kill .seckill .countdown a .countdown-desc .countdown-timmer .uini-timer:after {
+  content: ":";
+  width: 20px;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: -20px;
+  font-weight: 700;
+}
+.content .Jd-kill .seckill .countdown a .countdown-desc .countdown-timmer .uini-timer:last-child:after {
+  content: "";
+}
+.content .Jd-kill .seckill .countdown a:hover {
+  color: #fff !important;
+}
+.content .Jd-kill .seckill .skill-item {
+  flex: 3;
+}
+.content .Jd-kill .seckill .skill-item .slider-items {
+  display: flex;
+}
+.content .Jd-kill .seckill .skill-item .slider-items .slider-item {
+  padding: 30px 0 0 20px;
+  width: 180px;
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+}
+.content .Jd-kill .seckill .skill-item .slider-items .slider-item h6 {
+  margin: 10px 0;
+  height: 18px;
+  width: 160px;
+  text-overflow: ellipsis;
+  /*省略号 */
+  white-space: nowrap;
+  /*溢出时不换行 */
+  overflow: hidden;
+  font-size: 12px;
+  color: #333;
+}
+.content .Jd-kill .seckill .skill-item .slider-items .slider-item h6:hover {
+  color: #e2231a;
+}
+.content .Jd-kill .seckill .skill-item .slider-items .slider-item-price {
+  text-align: center;
+  position: relative;
+  right: 41px;
+}
+.content .Jd-kill .seckill .skill-item .slider-items .slider-item-price-reduce {
+  height: 22px;
+  line-height: 22px;
+  width: 92px;
+  display: inline-block;
+  background-color: #e2231a;
+  color: #fff;
+  font-weight: 700;
+}
+.content .Jd-kill .seckill .skill-item .slider-items .slider-item-price-reduce i {
+  font-size: 10px;
+}
+.content .Jd-kill .seckill .skill-item .slider-items .slider-item-price-reduce::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-color: transparent white transparent transparent;
+  border-style: solid;
+  border-width: 22px 8px 0 0;
+  position: absolute;
+  top: 0;
+  left: 123px;
+}
+.content .Jd-kill .seckill .skill-item .slider-items .slider-item-price-orign {
+  position: absolute;
+  left: 136px;
+  margin-left: -5px;
+  vertical-align: middle;
+  height: 20px;
+  line-height: 22px;
+  width: 66px;
+  display: inline-block;
+  background-color: #fff;
+  text-decoration: line-through;
+  color: #999;
+  font-size: 12px;
+  border: 1px solid #e2231a;
+  border-left: none;
+}
+.content .Jd-kill .seckill .skill-brand {
+  padding: 20px 0 0 20px;
+  width: 180px;
+  height: 230px;
+  font-size: 14px;
+  text-align: center;
+}
+.content .Jd-kill .seckill .skill-brand .item-info {
+  line-height: 21px;
+  height: 84px;
+  background-image: linear-gradient(to bottom, #f7f7f7, #2a82df);
+}
+.content .Jd-kill .seckill .skill-brand .item-info .hot {
+  margin: 5px 0;
+  font-weight: 700;
+}
+.content .Jd-kill .seckill .skill-brand .item-info .brand {
+  margin: 0 auto;
+  width: 84px;
+  height: 21px;
+  line-height: 21px;
+  border: 1px solid #c81623;
+  border-radius: 14px;
+  font-weight: 700;
+}
+.content .Jd-kill .seckill .skill-brand .item-info .brand .iconfont {
+  font-size: 10px;
+}
+.content .Jd-kill .seckill .skill-brand .item-info .brand:hover {
+  background-color: #c81623;
+  color: #fff;
 }
