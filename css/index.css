@@ -1188,9 +1188,6 @@
 .content .Jd-channel {
   margin-bottom: 30px;
 }
-.content .Jd-channel .channel-block {
-  height: 1015px;
-}
 .content .Jd-channel .channel-block .channel-hd {
   width: 1220px;
   height: 65px;
@@ -1335,15 +1332,15 @@
 }
 .content .recommend-block .more-lists {
   display: flex;
-  height: 1200px;
-  width: 1220px;
+  flex-wrap: wrap;
+  width: 1240px;
 }
 .content .recommend-block .more-lists-item {
   display: flex;
   flex-wrap: wrap;
-  width: 230px;
+  width: 232px;
   height: 322px;
-  margin: 10px 0;
+  margin: 10px 15px 10px 0px;
   text-align: center;
   background-color: #fff;
 }
@@ -1358,9 +1355,109 @@
   margin-top: 30px;
 }
 .content .recommend-block .more-lists-item .more-info {
+  position: relative;
+  padding: 0 10px;
   width: 230px;
   height: 100px;
   font-size: 14px;
   line-height: 24px;
   text-overflow: ellipsis;
+}
+.content .recommend-block .more-lists-item .more-info:hover .find-other {
+  display: flex;
+}
+.content .recommend-block .more-lists-item .more-info .find-other {
+  display: none;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 230px;
+  height: 66px;
+  opacity: 0.9;
+  z-index: 100;
+  background-color: #ffffff;
+}
+.content .recommend-block .more-lists-item .more-info .find-other span {
+  margin: 15px auto;
+  color: #fff;
+  display: inline-block;
+  width: 122px;
+  height: 30px;
+  background-color: #c81623;
+  line-height: 30px;
+  border-radius: 15px;
+}
+.footer {
+  padding-top: 30px;
+  background-color: #f5f5f5;
+}
+.footer .mod-service {
+  display: flex;
+  justify-content: space-between;
+  height: 79px;
+  border-bottom: 1px solid #ededed;
+}
+.footer .mod-service-item {
+  display: flex;
+  flex: 1;
+  width: 240px;
+  height: 79px;
+}
+.footer .mod-service-item h3 {
+  margin-left: 10px;
+  font-weight: 700;
+}
+.footer .mod-service-item-ti {
+  width: 180px;
+  height: 42px;
+  line-height: 42px;
+  font-size: 18px;
+}
+.footer .mod-service-item-duo {
+  width: 36px;
+  height: 42px;
+  background: url("../../images/sprite.png") 0 -192px;
+}
+.footer .mod-service-item-kuai {
+  width: 36px;
+  height: 42px;
+  background: url("../../images/sprite.png") -41px -192px;
+}
+.footer .mod-service-item-hao {
+  width: 36px;
+  height: 42px;
+  background: url("../../images/sprite.png") -82px -192px;
+}
+.footer .mod-service-item-sheng {
+  width: 36px;
+  height: 42px;
+  background: url("../../images/sprite.png") -123px -192px;
+}
+.footer .mod-help {
+  display: flex;
+  height: 187px;
+  border-bottom: 1px solid #ededed;
+}
+.footer .mod-help-list {
+  flex: 1;
+  padding: 20px 0 0 50px;
+}
+.footer .mod-help-list dt {
+  height: 30px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.footer .mod-help-list dd a {
+  font-size: 14px;
+  height: 21px;
+}
+.footer .mod-copyright {
+  text-align: center;
+}
+.footer .mod-copyright-links {
+  margin: 20px 0 15px 0;
+}
+.footer .mod-copyright-detl {
+  height: 21px;
+  line-height: 21px;
 }
