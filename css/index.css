@@ -59,7 +59,6 @@
 }
 .header .header-content {
   padding-bottom: 10px;
-  height: 120px;
   display: flex;
 }
 .header .header-content .logo {
@@ -87,6 +86,10 @@
   flex: 8;
   border: none;
   outline: none;
+}
+.header .header-content-search .search-content .search-form .iconfont {
+  padding: 8px;
+  font-size: 16px;
 }
 .header .header-content-search .search-content .search-form button {
   flex: 1;
@@ -164,18 +167,15 @@
   flex: 1 1 0;
 }
 .content {
-  width: 100%;
-  background-color: #ededed;
+  background-color: #f5f5f5;
 }
 .content-items {
-  padding: 10px 0 0 0;
+  margin: 10px auto 30px ;
   display: flex;
-  margin-bottom: 30px;
 }
 .content-items .nav-left {
   width: 190px;
-  height: 480px;
-  padding-left: 18px;
+  padding-left: 15px;
   margin-right: 10px;
   background-color: #fff;
 }
@@ -266,8 +266,8 @@
   margin-top: 10px;
 }
 .content-items .roll {
+  flex-shrink: 0;
   width: 570px;
-  height: 480px;
   overflow: hidden;
 }
 .content-items .roll .slider {
@@ -305,6 +305,7 @@
 }
 .content-items .recommend {
   margin-left: 10px;
+  height: 480px;
 }
 .content-items .recommend li:nth-last-child(1) {
   margin: 0;
@@ -317,18 +318,13 @@
   height: 150px;
 }
 .content-items .nav-info {
-  display: flex;
-  flex-direction: column;
-  height: 480px;
-  flex: 1 0 0;
   margin-left: 20px;
   font-size: 12px;
   background-color: #fff;
+  height: 480px;
 }
 .content-items .nav-info .user {
-  width: 170px;
-  margin: 0 20px;
-  padding-bottom: 20px;
+  padding: 10px 20px;
   border-bottom: 1px solid #ccc;
 }
 .content-items .nav-info .user-info {
@@ -378,8 +374,7 @@
   background-color: #e1251b;
 }
 .content-items .nav-info .news {
-  margin-left: 15px;
-  padding-bottom: 20px;
+  padding: 5px 0 10px 15px;
 }
 .content-items .nav-info .news-fast {
   display: flex;
@@ -415,19 +410,20 @@
 }
 .content-items .nav-info .services {
   display: flex;
-  width: 170px;
-  margin: 0 20px;
+  width: 209px;
+  padding: 20px 20px 0;
   border-top: 1px solid #ccc;
   flex-wrap: wrap;
   text-align: left;
+  height: 234px;
+  box-sizing: border-box;
 }
 .content-items .nav-info .services-item {
-  flex: 2;
   width: 55px;
-  height: 55px;
-  margin: 10px;
+  height: 50px;
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 .content-items .nav-info .services-item-link {
   display: block;
@@ -590,8 +586,6 @@
 .content .Jd-kill .seckill .skill-brand .item-info .brand {
   margin: 0 auto;
   width: 84px;
-  height: 21px;
-  line-height: 21px;
   border: 1px solid #c81623;
   border-radius: 14px;
   font-weight: 700;
@@ -612,11 +606,8 @@
 .content .bargin .daily-spec {
   width: 590px;
   background-color: #fff;
-  display: flex;
-  flex-wrap: wrap;
 }
 .content .bargin .daily-spec .spec-hd {
-  width: 590px;
   display: flex;
   height: 60px;
   line-height: 60px;
@@ -644,10 +635,12 @@
 }
 .content .bargin .daily-spec-content {
   display: flex;
+  padding: 20px;
   height: 280px;
+  box-sizing: border-box;
 }
 .content .bargin .daily-spec-content .spec-item {
-  padding: 20px 30px;
+  padding: 0 20px 0;
   width: 170px;
   text-align: center;
 }
@@ -687,8 +680,6 @@
 }
 .content .bargin .daily-spec-content .spec-lists {
   display: flex;
-  width: 350px;
-  padding: 20px 0;
   flex-wrap: wrap;
 }
 .content .bargin .daily-spec-content .spec-lists-item {
@@ -730,13 +721,10 @@
   flex-wrap: wrap;
 }
 .content .bargin .buy-brand .brand-hd {
-  height: 60px;
-  line-height: 60px;
-  margin: 0 20px;
+  padding: 0 20px;
 }
 .content .bargin .buy-brand .brand-hd-title {
-  flex: 1;
-  margin-right: auto;
+  line-height: 60px;
   font-weight: 700;
   font-size: 24px;
   color: #333;
@@ -746,40 +734,37 @@
   font-size: 20px;
   margin-left: 8px;
 }
-.content .bargin .buy-brand .brand-item {
+.content .bargin .buy-brand .brand-hd .brand-item {
   height: 270px;
   display: flex;
-  margin-left: 20px;
   text-align: center;
 }
-.content .bargin .buy-brand .brand-item .icon-content {
+.content .bargin .buy-brand .brand-hd .brand-item .icon-content {
   position: relative;
   width: 270px;
   height: 265px;
   background: linear-gradient(to bottom, #fff, 80%, #fddd);
 }
-.content .bargin .buy-brand .brand-item .icon-content .icon-brand {
-  padding-bottom: 10px;
+.content .bargin .buy-brand .brand-hd .brand-item .icon-content .icon-brand {
+  margin-bottom: 10px;
   height: 24px;
   font-size: 18px;
   font-weight: 700;
 }
-.content .bargin .buy-brand .brand-item .icon-content span {
+.content .bargin .buy-brand .brand-hd .brand-item .icon-content span {
   font-size: 12px;
 }
-.content .bargin .buy-brand .brand-item .icon-content .big-bra {
-  margin-left: 65px;
-  margin-top: 10px;
+.content .bargin .buy-brand .brand-hd .brand-item .icon-content .big-bra {
+  margin: 10px auto;
   width: 130px;
-  height: 130px;
 }
-.content .bargin .buy-brand .brand-item .icon-content .big-bra img {
+.content .bargin .buy-brand .brand-hd .brand-item .icon-content .big-bra img {
   width: 100%;
 }
-.content .bargin .buy-brand .brand-item .icon-content .rest-days {
+.content .bargin .buy-brand .brand-hd .brand-item .icon-content .rest-days {
   margin-left: 10px;
 }
-.content .bargin .buy-brand .brand-item .icon-content .rest-days:before {
+.content .bargin .buy-brand .brand-hd .brand-item .icon-content .rest-days:before {
   content: "";
   position: absolute;
   left: 138px;
@@ -788,21 +773,20 @@
   height: 10px;
   background-color: rgba(102, 102, 102, 0.4);
 }
-.content .bargin .buy-brand .brand-item .icon-content .rest-days strong {
+.content .bargin .buy-brand .brand-hd .brand-item .icon-content .rest-days strong {
   font-weight: 700;
 }
-.content .bargin .buy-brand .brand-item .other-items {
+.content .bargin .buy-brand .other-items {
   display: flex;
   flex-wrap: wrap;
   width: 280px;
-  height: 312px;
-  margin-top: -47px;
+  padding: 15px 0;
 }
-.content .bargin .buy-brand .brand-item .other-items .other-item {
+.content .bargin .buy-brand .other-items .other-item {
   width: 130px;
   margin: 5px;
 }
-.content .bargin .buy-brand .brand-item .other-items .other-item img {
+.content .bargin .buy-brand .other-items .other-item img {
   width: 100px;
   margin: 0 10px;
 }
@@ -820,7 +804,7 @@
 .content .jd-goods .news-arrival-hd {
   height: 60px;
   line-height: 60px;
-  margin: 0 20px;
+  padding: 0 20px;
 }
 .content .jd-goods .news-arrival-hd-title {
   font-weight: 700;
@@ -870,15 +854,14 @@
 .content .jd-goods .jd-top {
   width: 290px;
   background-color: #fff;
+  padding: 0 15px;
+  box-sizing: border-box;
 }
 .content .jd-goods .jd-top-hd {
   height: 60px;
   line-height: 60px;
-  margin: 0 20px;
 }
 .content .jd-goods .jd-top-hd-title {
-  flex: 1;
-  margin-right: auto;
   font-weight: 700;
   font-size: 24px;
   color: #333;
@@ -890,7 +873,6 @@
 }
 .content .jd-goods .jd-top-hd-tag {
   display: flex;
-  width: 290px;
   line-height: 20px;
 }
 .content .jd-goods .jd-top-hd-tag li {
@@ -911,14 +893,11 @@
   height: 20px;
   color: #fff !important;
 }
-.content .jd-goods .jd-top-hd .fitment {
-  width: 270px;
-}
-.content .jd-goods .jd-top-hd .fitment li {
+.content .jd-goods .jd-top .fitment li {
   display: flex;
-  margin-top: 10px;
+  margin-top: 20px;
 }
-.content .jd-goods .jd-top-hd .fitment li .rank {
+.content .jd-goods .jd-top .fitment li .rank {
   margin: 7px;
   display: flex;
   flex-wrap: wrap;
@@ -928,7 +907,7 @@
   background-size: 29px 41px;
   text-align: center;
 }
-.content .jd-goods .jd-top-hd .fitment li .rank-top {
+.content .jd-goods .jd-top .fitment li .rank-top {
   line-height: 16px;
   width: 28px;
   height: 16px;
@@ -936,7 +915,7 @@
   font-weight: 700;
   font-size: 12px;
 }
-.content .jd-goods .jd-top-hd .fitment li .rank-num {
+.content .jd-goods .jd-top .fitment li .rank-num {
   margin-top: -5px;
   width: 28px;
   height: 19px;
@@ -945,15 +924,14 @@
   font-size: 18px;
   color: #fff;
 }
-.content .jd-goods .jd-top-hd .fitment li img {
+.content .jd-goods .jd-top .fitment li img {
   width: 70px;
   height: 70px;
   margin: 0 5px;
 }
-.content .jd-goods .jd-top-hd .fitment li a {
+.content .jd-goods .jd-top .fitment li a {
   line-height: 25px;
   margin: 10px;
-  width: 140px;
   height: 50px;
   overflow: hidden;
   font-size: 14px;
@@ -961,15 +939,14 @@
 .content .jd-goods .nice-shop {
   width: 290px;
   background-color: #fff;
+  padding: 0 15px;
+  box-sizing: border-box;
 }
 .content .jd-goods .nice-shop-hd {
   height: 60px;
   line-height: 60px;
-  margin: 0 20px;
 }
 .content .jd-goods .nice-shop-hd-title {
-  flex: 1;
-  margin-right: auto;
   font-weight: 700;
   font-size: 24px;
   color: #333;
@@ -979,16 +956,12 @@
   font-size: 20px;
   margin-left: 8px;
 }
-.content .jd-goods .nice-shop .nice-shop-container {
-  width: 290px;
-  height: 266px;
-}
 .content .jd-goods .nice-shop .nice-shop-container .shop-item {
   position: relative;
   height: 128px;
   padding: 0 15px;
   background: url("../../images/bg3.png");
-  margin-top: 12px;
+  margin-bottom: 10px;
   background-size: cover;
 }
 .content .jd-goods .nice-shop .nice-shop-container .shop-item .shop-info {
@@ -1037,10 +1010,9 @@
 }
 .content .jd-goods .nice-shop .nice-shop-container .shop-item .shop-item-cover {
   position: absolute;
-  top: 12px;
-  left: 170px;
+  top: 14px;
+  left: 140px;
   width: 100px;
-  height: 100px;
   text-align: center;
   background-color: #fff;
 }
@@ -1056,11 +1028,9 @@
 .content .jd-goods .coupons-hd {
   height: 60px;
   line-height: 60px;
-  margin: 0 20px;
+  padding: 0 15px;
 }
 .content .jd-goods .coupons-hd-title {
-  flex: 1;
-  margin-right: auto;
   font-weight: 700;
   font-size: 24px;
   color: #333;
@@ -1220,9 +1190,8 @@
   margin-right: 0;
 }
 .content .Jd-channel .channel-block .channel-bd-wrapper-items .bd-items-title {
-  width: 250px;
   height: 60px;
-  margin-left: 20px;
+  padding-left: 20px;
 }
 .content .Jd-channel .channel-block .channel-bd-wrapper-items .bd-items-title-main {
   font-size: 22px;
@@ -1319,8 +1288,6 @@
   text-align: center;
 }
 .content .recommend-block .more-lists-item .item-img img {
-  width: 150px;
-  height: 150px;
   margin-top: 30px;
 }
 .content .recommend-block .more-lists-item .more-info {
@@ -1357,20 +1324,17 @@
   border-radius: 15px;
 }
 .footer {
-  padding-top: 30px;
   background-color: #f5f5f5;
 }
 .footer .mod-service {
   display: flex;
   justify-content: space-between;
-  height: 79px;
   border-bottom: 1px solid #ededed;
+  padding: 20px 0;
 }
 .footer .mod-service-item {
   display: flex;
-  flex: 1;
   width: 240px;
-  height: 79px;
 }
 .footer .mod-service-item h3 {
   margin-left: 10px;
@@ -1406,10 +1370,14 @@
   display: flex;
   height: 187px;
   border-bottom: 1px solid #ededed;
+  padding: 20px 0;
 }
 .footer .mod-help-list {
-  flex: 1;
-  padding: 20px 0 0 50px;
+  width: 198px;
+  margin-right: 20px;
+}
+.footer .mod-help-list:last-child {
+  margin-right: 0;
 }
 .footer .mod-help-list dt {
   height: 30px;
