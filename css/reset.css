@@ -14,8 +14,7 @@ time, mark, audio, video{
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
-  font: inherit;
+  font-size: 12px;
   font-weight: normal;
   vertical-align: baseline;
 }
@@ -39,15 +38,33 @@ table{
   border-collapse: collapse;
   border-spacing: 0;
 }
- 
+ i{
+   font-size:10px;
+ }
 /* custom */
 a{
-  color: #7e8c8d;
+  display:inline-block;
+  color: #666;
   text-decoration: none;
+  font-size:14px;
  
 }
 a:hover {
   color: #e2231a !important;
+}
+span{
+  display: inline-block;
+}
+strong {
+  line-height: 26px;
+  margin-right: 2px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+input,button{
+  outline:none;
+  border:none;
 }
 ::-webkit-scrollbar{
   width: 5px;
